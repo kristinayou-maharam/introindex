@@ -91,7 +91,7 @@ p {
   #slidecontainer{
     display: flex;
     flex-direction: row;
-    width: 300vw;
+    width: 180vw;
   }
 
   .slides{
@@ -109,6 +109,7 @@ p {
 .slides:hover{
   background-size: 105vw;
   transition: 0.5s ease-in-out;
+  width: 500vw;
 }
 
   #slideone{
