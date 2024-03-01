@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "maharam";
+    src: url("../src/MaharamNeue-Regular.otf");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "maharam-medium";
+    src: url("../src/MaharamNeue-Medium.otf");
+    font-weight: medium;
+  }
+
+body{
+  margin-bottom: 15vh;
+}
+
+#logo{
+    width: 150px;
+    margin-left: 0vw;
+}
+
+#logolockup{
+    display: inline-block;
+    margin-left: 5vw;
+    margin-top: -18vh;
+    position: fixed;
+    z-index: 10;
+}
+
+
+p {
+    font-size: 16px;
+    color: #000000;
+    font-family: "maharam";
+    font-weight: normal;
+    vertical-align: top;
+    line-height: 1.4;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #000000;
+    font-family: "maharam";
+    font-weight: normal;
+    margin-bottom: 50px;
+    vertical-align: top;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #000000;
+    font-family: "maharam";
+    font-weight: normal;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #000000;
+    font-family: "maharam";
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  a{
+    color: rgb(0, 0, 0);
+  }
+
+  #rightnav{
+    width: 25vw;
+    display: flex;
+   position: fixed;
+   justify-content: right;
+   top: 4vh;
+   right: 80px;
+   z-index: 10;
+  }
+
+  #home{
+    display: inline;
+    text-decoration: underline;
+  }
+
+  #index{
+    display: inline;
+    text-decoration: underline;
+    margin-left: 40px;
+  }
+
+  #smallpreview{
+    width: 25vw;
+    transform: .2s;
+    transition: 0.8s;
+
+  }
+
+  #smallpreview:hover{
+    transform: scale(1.05);
+  }
+
+  #block{
+    display: inline-block;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  #gallery{
+    position: relative;
+    margin-top: 24vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: block;
+  }
+
+  #row{
+    margin-bottom: 50px;
+  }
+
+  #productlink{
+    line-height: 0.8;
+  }
+
+  #sort{
+    display: block;
+    position: absolute;
+    right: 12.5vw;
+    top: 16vh;
+  }
+
+  #top{
+    background-color: white;
+  }

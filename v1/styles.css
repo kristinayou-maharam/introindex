@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "maharam";
+    src: url("../src/MaharamNeue-Regular.otf");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "maharam-medium";
+    src: url("../src/MaharamNeue-Medium.otf");
+    font-weight: medium;
+  }
+
+#logo{
+    width: 150px;
+    margin-left: 0vw;
+}
+
+#logolockup{
+    display: inline-block;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    position: fixed;
+    z-index: 10;
+}
+
+body{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "maharam";
+    font-weight: normal;
+    vertical-align: top;
+    line-height: 1.4;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #000000;
+    font-family: "maharam";
+    font-weight: normal;
+    margin-bottom: 50px;
+    vertical-align: top;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "maharam";
+    font-weight: normal;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "maharam";
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  a{
+    color: rgb(255, 255, 255);
+  }
+
+  #rightnav{
+    width: 25vw;
+    display: flex;
+   position: fixed;
+   justify-content: right;
+   top: 4vh;
+   right: 80px;
+   z-index: 10;
+  }
+
+  #home{
+    display: inline;
+    text-decoration: underline;
+  }
+
+  #index{
+    display: inline;
+    text-decoration: underline;
+    margin-left: 40px;
+  }
+
+  #slidecontainer{
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+  }
+
+  .slides{
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+    z-index: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
+
+.slides:hover{
+  background-size: 105vw;
+  transition: 0.5s ease-in-out;
+}
+
+  #slideone{
+    background-image: url(./img/MHRM_JacobHashimoto_Product_01.jpg);
+  }
+
+  #slidetwo{
+    background-image: url(./img/isa_IMG_0031_1.jpg);
+  }
+
+  #slidethree{
+    background-image: url(./img/factor_0027.jpg);
+  }
+  #slidefour{
+    background-image: url(./img/passage.jpg);
+  }
+  #slidefive{
+    background-image: url(./img/cumulus-hive.jpg);
+  }
+  #slidesix{
+    background-image: url(./img/canopy.jpg);
+  }
+  #slideseven{
+    background-image: url(./img/twist.jpg);
+  }
+
+  #seemore{
+    background-color: #a8a8a8;
+    width: 50vw;
+  }
+
+  #seemore:hover{
+    background-color: #000000;
+  }
+
+  #month{
+position: relative;
+margin-top: 78vh;
+margin-left: 5vw;
+  }
+
+  #month:hover{
+    color: red;
+  }
+
+  #more{
+    position: relative;
+    margin-top: 78vh;
+    margin-left: 5vw;
+      }
+
+  #more:hover{
+    color: red !important;
+  }
+
+  #controls{
+    margin-left: 5vw;
+  }
+
+
