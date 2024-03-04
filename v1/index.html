@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maharam Introduction Page Index</title>
     <link rel="stylesheet" href="styles.css">
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='./src/jquery.mousewheel.min.js'></script>
 </head>
 <body>
     <div id="logolockup">
@@ -18,34 +20,141 @@
     <div id="slidecontainer">
     <div id="slideone" class="slides">
 <h2 id="month">February 2024</h2>
-<div id="controls">
-    <!-- <h3><a href="https://introductions.maharam.com/february_2024/"> Presentation→</a></h3>
-    <h3><a href="https://www.maharam.com/products">Products→</h3></div> -->
+<div class="controls" id="slideonelinks">
+    <h3><a target="_blank" rel="noopener noreferrer" href="https://introductions.maharam.com/february_2024"> Presentation→</a></h3>
+    <h3><a target="_blank" rel="noopener noreferrer" href="https://www.maharam.com/products">Products→</a></h3>
 </div>
-    </div>
+</div>
     <div id="slidetwo" class="slides">
-     <h2 id="month">November 2023</h2>   
+     <h2 id="month">November 2023</h2> 
+     <div class="controls" id="slidetwolinks">
+        <h3><a target="_blank" rel="noopener noreferrer" href="https://introductions.maharam.com/november_2023"> Presentation→</a></h3>
+        <h3><a target="_blank" rel="noopener noreferrer" href="https://www.maharam.com/products">Products→</a></h3>
+    </div>  
     </div>
     <div id="slidethree" class="slides">
-        <h2 id="month">September 2023</h2>   
+        <h2 id="month">September 2023</h2>
+        <div class="controls" id="slidethreelinks">
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://introductions.maharam.com/september_2023"> Presentation→</a></h3>
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://www.maharam.com/products">Products→</a></h3>
+        </div>  
        </div>
     <div id="slidefour" class="slides">
-        <h2 id="month">June 2023</h2>   
+        <h2 id="month">June 2023</h2>
+        <div class="controls" id="slidefourlinks">
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://introductions.maharam.com/june_2023"> Presentation→</a></h3>
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://www.maharam.com/products">Products→</a></h3>
+        </div>
     </div>
     <div id="slidefive" class="slides">
-        <h2 id="month">April 2023</h2>   
+        <h2 id="month">April 2023</h2> 
+        <div class="controls" id="slidefivelinks">
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://introductions.maharam.com/april_2023"> Presentation→</a></h3>
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://www.maharam.com/products">Products→</a></h3>
+        </div> 
     </div>
     <div id="slidesix" class="slides">
-        <h2 id="month">February 2023</h2>   
+        <h2 id="month">February 2023</h2>  
+        <div class="controls" id="slidesixlinks">
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://introductions.maharam.com/february_2023"> Presentation→</a></h3>
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://www.maharam.com/products">Products→</a></h3>
+        </div> 
     </div>
     <div id="slideseven" class="slides">
-        <h2 id="month">November 2022: Bertjan Pot</h2>   
+        <h2 id="month">November 2022: <br>Bertjan Pot</h2> 
+        <div class="controls" id="slidesevenlinks">
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://introductions.maharam.com/november_2022"> Presentation→</a></h3>
+            <h3><a target="_blank" rel="noopener noreferrer" href="https://www.maharam.com/products">Products→</a></h3>
+        </div> 
     </div>
     <div id="seemore" class="slides">
-       <a style="text-decoration: none;" href="./listview.html"><h2 id="more" style="color: black;">See More →</h2></a>
+       <a style="text-decoration: none;" href="./listview.html"><h2 id="more">See More →</h2></a>
     </div>
 </div>
+<script>
+function showone(){
+var one = document.getElementById("slideonelinks");
 
-    
+if (one.style.display === "none"){
+    one.style.display = "block";
+} else{
+    one.style.display = "none";
+}
+}
+
+function showtwo(){
+var two = document.getElementById("slidetwolinks");
+
+if (two.style.display === "none"){
+    two.style.display = "block";
+} else{
+    two.style.display = "none";
+}
+}
+
+function showthree(){
+var three = document.getElementById("slidethreelinks");
+
+if (three.style.display === "none"){
+    three.style.display = "block";
+} else{
+    three.style.display = "none";
+}
+}
+
+function showfour(){
+var four = document.getElementById("slidefourlinks");
+
+if (four.style.display === "none"){
+    four.style.display = "block";
+} else{
+    four.style.display = "none";
+}
+}
+
+function showfive(){
+var five = document.getElementById("slidefivelinks");
+
+if (five.style.display === "none"){
+    five.style.display = "block";
+} else{
+    five.style.display = "none";
+}
+}
+
+function showsix(){
+var six = document.getElementById("slidesixlinks");
+
+if (six.style.display === "none"){
+    six.style.display = "block";
+} else{
+    six.style.display = "none";
+}
+}
+
+function showseven(){
+var seven = document.getElementById("slidesevenlinks");
+
+if (seven.style.display === "none"){
+    seven.style.display = "block";
+} else{
+    seven.style.display = "none";
+}
+}
+
+$(function() {
+
+$("body").mousewheel(function(event, delta) {
+
+   this.scrollLeft -= (delta * 30);
+ 
+   event.preventDefault();
+
+});
+
+});
+
+
+</script> 
 </body>
 </html>

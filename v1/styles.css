@@ -77,6 +77,7 @@ p {
 
   a{
     color: rgb(255, 255, 255);
+    text-decoration: none;
   }
 
   #rightnav{
@@ -100,10 +101,11 @@ p {
     margin-left: 40px;
   }
 
+
   #slidecontainer{
     display: flex;
     flex-direction: row;
-    width: 180vw;
+    width: 200vw;
   }
 
   .slides{
@@ -150,7 +152,8 @@ p {
 
   #seemore{
     background-color: #a8a8a8;
-    width: 50vw;
+    color: white;
+    width: 70vw;
   }
 
   #seemore:hover{
@@ -163,9 +166,6 @@ margin-top: 78vh;
 margin-left: 5vw;
   }
 
-  #month:hover{
-    color: red;
-  }
 
   #more{
     position: relative;
@@ -177,8 +177,15 @@ margin-left: 5vw;
     color: red !important;
   }
 
-  #controls{
+  .controls{
     margin-left: 5vw;
+    z-index: 100;
+    /* display: none; */
   }
 
 
+  @media only and (max-width: 768px) {
+  body{
+  -webkit-overflow-scrolling: touch;
+  }
+}
