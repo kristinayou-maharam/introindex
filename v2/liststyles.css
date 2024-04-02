@@ -1,12 +1,12 @@
 @font-face {
     font-family: "maharam";
-    src: url("../src/MaharamNeue-Regular.otf");
+    src: url("./src/MaharamNeue-Regular.otf");
     font-weight: normal;
   }
   
   @font-face {
     font-family: "maharam-medium";
-    src: url("../src/MaharamNeue-Medium.otf");
+    src: url("./src/MaharamNeue-Medium.otf");
     font-weight: medium;
   }
 
@@ -94,18 +94,21 @@ p {
   #smallpreview{
     width: 25vw;
     transform: .2s;
-    transition: 0.8s;
+    transition: all 0.8s;
+    height: 35vh;
+    background-size: 100% 100%;
 
   }
 
   #smallpreview:hover{
-    transform: scale(1.05);
+    background-size: 105% 105%;
   }
 
   #block{
     display: inline-block;
     margin-right: 2vw;
     margin-left: 2vw;
+    margin-bottom: 30px;
   }
 
   #gallery{
@@ -124,6 +127,7 @@ p {
     line-height: 0.8;
   }
 
+
   #sort{
     display: block;
     position: absolute;
@@ -133,4 +137,5 @@ p {
 
   #top{
     background-color: white;
+    z-index: 1000;
   }
