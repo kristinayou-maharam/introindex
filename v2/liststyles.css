@@ -1,14 +1,26 @@
 @font-face {
-    font-family: "maharam";
-    src: url("./src/MaharamNeue-Regular.otf");
-    font-weight: normal;
-  }
-  
-  @font-face {
-    font-family: "maharam-medium";
-    src: url("./src/MaharamNeue-Medium.otf");
-    font-weight: medium;
-  }
+  font-family: "maharam";
+  src: url("./src/MaharamNeue-Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "maharam-italic";
+  src: url("./src/MaharamNeue-Italic.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "maharam-medium";
+  src: url("./src/MaharamNeue-Medium.otf");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "maharam-medium-italic";
+  src: url("./src/MaharamNeue-MediumItalic.otf");
+  font-weight: medium;
+}
 
 body{
   margin-bottom: 15vh;
