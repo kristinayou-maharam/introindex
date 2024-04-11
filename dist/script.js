@@ -175,22 +175,7 @@ expandButtonFour.addEventListener("click", function () {
           progress = (st.progress * 1) / ((movement + change) / movement);
           fourLinks.style.display = !expanded ? "none" : "block";
           expandFour.style.marginTop = !expanded ? "87vh" : "80vh";
-          expandFour.style.marginTop = !expanded ? "87vh" : "80vh";
-          gsap.set(containerInner, { width: expanded ? "370vw" : "120vw" });
-          ScrollTrigger.refresh();
-          // st.scroll(st.start + (st.end - st.start) * progress);
-          st.update();
-          st.getTween().progress(1); // eliminate the scrub animation
-          gsap.to(window, {
-            scrollTo: {
-              y: st.start + (st.end - st.start) * (expanded ? 1/3 : progress)
-              // Set the scroll to 0.5 of the ScrollTrigger instance's total scroll
-              // This is 1 divided by the index of the target, in this case
-              // the target is the third element so it's index is 2
-              // So is 1/2 = 0.5
-            },
-            ease: expanded ? "sine.inOut" : "power1.inOut"
-          });
+
           gsap.set(containerInner, { width: expanded ? "370vw" : "120vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
