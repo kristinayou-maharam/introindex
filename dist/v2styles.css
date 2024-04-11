@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "maharam";
+    src: url("./fonts/MaharamNeue-Regular.otf");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "maharam-italic";
+    src: url("./fonts/MaharamNeue-Italic.otf");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "maharam-medium";
+    src: url("./fonts/MaharamNeue-Medium.otf");
+    font-weight: medium;
+  }
+  
+  @font-face {
+    font-family: "maharam-medium-italic";
+    src: url("./fonts/MaharamNeue-MediumItalic.otf");
+    font-weight: medium;
+  }
+
 html {
     overflow-y: scroll;
     height: 100%;
@@ -18,7 +42,7 @@ html {
   #container-inner {
     background: rgb(153, 153, 153);
     height: 100vh;
-    width: 120vw;
+    width: 140vw;
     display: flex;
     flex-wrap: nowrap;
     max-width: unset !important;
@@ -28,13 +52,15 @@ html {
   section {
     min-width: 20vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+
   }
-  #expand {
+  .expand {
     cursor: pointer;
     color: white;
-    align-items: center;
+    margin-left: 3vw;
+    /* position: absolute; */
+    margin-top: 87vh;
   }
 
 
@@ -81,3 +107,75 @@ html {
     background-size: 100vw;
     
   }
+
+  .links{
+    display: none;
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "maharam";
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  h3:hover {
+    color: red;
+  }
+
+  h4{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "maharam";
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  #topnav{
+    display: block;
+    position: fixed;
+  z-index: 10;
+  }
+
+  #logolockup{
+    display: inline-block;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    position: fixed;
+  }
+
+  #logo{
+    width: 125px;
+  }
+
+  #rightnav{
+    width: 25vw;
+    display: flex;
+    position: fixed;
+    justify-content: right;
+    vertical-align: top;
+    top: 5vh;
+    right: 50px;
+    color: white;
+  }
+
+
+#index{
+    margin-left: 40px;
+  }
+
+  #index :hover{
+    color: red;
+  }
+
+  #home :hover{
+    color: red;
+  }
+
