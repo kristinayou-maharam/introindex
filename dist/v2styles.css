@@ -1,0 +1,83 @@
+html {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+  }
+  body {
+    overflow-y: visible;
+    position: relative;
+    height: unset;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  #container-inner {
+    background: rgb(153, 153, 153);
+    height: 100vh;
+    width: 120vw;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: unset !important;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: none;
+  }
+  section {
+    min-width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #expand {
+    cursor: pointer;
+    color: white;
+    align-items: center;
+  }
+
+
+
+.one{
+    background-image: url(./img/MHRM_JacobHashimoto_Product_01.jpg);
+    background-position: center;
+    background-size: 100vw;
+  }
+  
+.two{
+    background-image: url(./img/isa_IMG_0031_1.jpg);
+    background-position: center;
+    background-size: 100vw;
+  }
+  
+.three{
+    background-image: url(./img/factor_0027.jpg);
+    background-position: center;
+    background-size: 100vw;
+  }
+  
+.four{
+    background-image: url(./img/passage.jpg);
+    background-position: center;
+    background-size: 100vw;
+  }
+  
+.five{
+    background-image: url(./img/cumulus-hive.jpg);
+    background-position: center;
+    background-size: 100vw;
+  }
+  
+.six{
+    background-image: url(./img/canopy.jpg);
+    background-position: center;
+    background-size: 100vw;
+  }
+  
+.seven{
+    background-image: url(./img/twist.jpg);
+    background-position: center;
+    background-size: 100vw;
+    
+  }

@@ -61,8 +61,8 @@ section {
   cursor: pointer;
   color: white;
   position: absolute;
-  top: 78vh;
-  left: 5vw;
+  top: 90vh;
+  left: 3vw;
 }
 
 h3:hover {
@@ -92,16 +92,25 @@ h4{
   color: #ffffff;
   font-family: "maharam";
   font-weight: normal;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 16px;
 }
+
+#index :hover{
+  color: red;
+}
+
+#home :hover{
+  color: red;
+}
+
 
 
 
 #logolockup{
   display: inline-block;
-  margin-left: 5vw;
-  margin-top: 7vh;
+  margin-left: 3vw;
+  margin-top: 5vh;
   position: fixed;
 }
 
@@ -114,6 +123,7 @@ h4{
   display: flex;
   position: fixed;
   justify-content: right;
+  vertical-align: top;
   top: 5vh;
   right: 80px;
   color: white;
@@ -172,11 +182,12 @@ a{
   background-position: center;
   background-size: 100vw;
   width: 15vw !important;
+
 }
 
 #seemore:hover{
-  width: 25vw;
-  transition: 1s ease-in-out;
+  width: 20vw;
+  transition: 2s ease-in-out;
 }
 
 
