@@ -144,7 +144,7 @@ expandButtonThree.addEventListener("click", function () {
         st.getTween().progress(1); // eliminate the scrub animation
         gsap.to(window, {
           scrollTo: {
-            y: st.start + (st.end - st.start) * (expanded ? 0.5 : progress)
+            y: st.start + (st.end - st.start) * (expanded ? 1/2 : progress)
             // Set the scroll to 0.5 of the ScrollTrigger instance's total scroll
             // This is 1 divided by the index of the target, in this case
             // the target is the third element so it's index is 2
