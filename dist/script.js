@@ -252,7 +252,7 @@ expandButtonSix.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           sixLinks.style.display = !expanded ? "none" : "block";
-          expandSix.style.marginTop = !expanded ? "87vh" : "80vh";
+          expandSix.style.marginTop = !expanded ? "87vh" : "76vh";
 
           gsap.set(containerInner, { width: expanded ? "785vw" : "100vw" });
         ScrollTrigger.refresh();
