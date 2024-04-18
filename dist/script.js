@@ -137,7 +137,7 @@ expandButtonThree.addEventListener("click", function () {
           threeLinks.style.display = !expanded ? "none" : "block";
           expandThree.style.marginTop = !expanded ? "87vh" : "80vh";
 
-          gsap.set(containerInner, { width: expanded ? "180vw" : "120vw" });
+          gsap.set(containerInner, { width: expanded ? "180vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
@@ -176,7 +176,7 @@ expandButtonFour.addEventListener("click", function () {
           fourLinks.style.display = !expanded ? "none" : "block";
           expandFour.style.marginTop = !expanded ? "87vh" : "80vh";
 
-          gsap.set(containerInner, { width: expanded ? "370vw" : "120vw" });
+          gsap.set(containerInner, { width: expanded ? "340vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
@@ -215,7 +215,7 @@ expandButtonFive.addEventListener("click", function () {
           fiveLinks.style.display = !expanded ? "none" : "block";
           expandFive.style.marginTop = !expanded ? "87vh" : "80vh";
 
-          gsap.set(containerInner, { width: expanded ? "740vw" : "120vw" });
+          gsap.set(containerInner, { width: expanded ? "650vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
@@ -254,7 +254,7 @@ expandButtonSix.addEventListener("click", function () {
           sixLinks.style.display = !expanded ? "none" : "block";
           expandSix.style.marginTop = !expanded ? "87vh" : "80vh";
 
-          gsap.set(containerInner, { width: expanded ? "900vw" : "120vw" });
+          gsap.set(containerInner, { width: expanded ? "785vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
