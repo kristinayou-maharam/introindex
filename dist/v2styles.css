@@ -108,6 +108,14 @@ html {
     
   }
 
+  .more{
+    background-color: black;
+  }
+
+  #seemore :hover{
+color: red !important;
+  }
+
   .links{
     display: none;
   }

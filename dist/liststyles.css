@@ -34,16 +34,16 @@
   
   #logolockup{
     display: inline-block;
-    margin-left: 5vw;
-    margin-top: -15vh;
+    margin-left: 2.5vw;
+    margin-top: -24vh;
     position: fixed;
   }
 
   #topnav{
     display: block;
     position: fixed;
-  z-index: 10;
-  margin-top: -20px;
+    margin-top: 5vh;
+    z-index: 10;
   }
   
   
@@ -87,6 +87,8 @@
       color: #ffffff;
       font-family: "maharam";
       font-weight: normal;
+      margin-top: 0px;
+      margin-bottom: 16px;
     }
   
     a{
@@ -103,8 +105,8 @@
       display: flex;
      position: fixed;
      justify-content: right;
-     top: 3.5vh;
-     right: 80px;
+     top: 5vh;
+     right: 50px;
      z-index: 10;
     }
   
@@ -152,12 +154,11 @@
     #productlink{
       line-height: 0.8;
     }
-  
-  
+
     #sort{
       display: block;
       position: absolute;
-      right: 12.5vw;
+      right: 13.5vw;
       top: 16vh;
     }
   
