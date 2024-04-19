@@ -44,7 +44,7 @@ var expandFour = document.getElementById("expandfour");
 var expandFive = document.getElementById("expandfive");
 var expandSix = document.getElementById("expandsix");
 var expandSeven = document.getElementById("expandseven");
-var expandEight = document.getElementById("expand");
+var expandEight = document.getElementById("expandeight");
 
 
 expandButtonOne.addEventListener("click", function () {
@@ -258,7 +258,7 @@ expandButtonSix.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           sixLinks.style.display = !expanded ? "none" : "block";
-          expandSix.style.marginTop = !expanded ? "87vh" : "76vh";
+          expandSix.style.marginTop = !expanded ? "87vh" : "80vh";
 
           gsap.set(containerInner, { width: expanded ? "785vw" : "100vw" });
         ScrollTrigger.refresh();
@@ -297,9 +297,9 @@ expandButtonSeven.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           sevenLinks.style.display = !expanded ? "none" : "block";
-          expandSix.style.marginTop = !expanded ? "87vh" : "76vh";
+          expandSeven.style.marginTop = !expanded ? "87vh" : "76vh";
 
-          gsap.set(containerInner, { width: expanded ? "785vw" : "100vw" });
+          gsap.set(containerInner, { width: expanded ? "920vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
@@ -336,9 +336,10 @@ expandButtonEight.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           eightLinks.style.display = !expanded ? "none" : "block";
-          expandSix.style.marginTop = !expanded ? "87vh" : "76vh";
+          expandEight.style.marginTop = !expanded ? "87vh" : "76vh";
+    
 
-          gsap.set(containerInner, { width: expanded ? "785vw" : "100vw" });
+          gsap.set(containerInner, { width: expanded ? "1058vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
