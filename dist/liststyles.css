@@ -66,13 +66,14 @@
     }
     
     h2 {
-      font-size: 30px;
+      font-size: 20px;
       color: #000000;
       font-family: "maharam";
       font-weight: normal;
       vertical-align: top;
       margin-top: 20px;
     }
+
     
     h3 {
       font-size: 18px;
@@ -179,4 +180,12 @@
 
     .is-active{
       color: red;
+    }
+
+    #intro{
+      display: inline-block;
+      position: absolute;
+      top: 16vh;
+      left: 7.5vw;
+      font-family: 'maharam-medium';
     }
