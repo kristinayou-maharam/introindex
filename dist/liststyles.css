@@ -125,13 +125,14 @@
       transform: .2s;
       transition: all 0.8s;
       height: 35vh;
-      background-size: 100% 100%;
+      background-size: 100%;
       background-position: center;
+      background-repeat: no-repeat;
   
     }
   
     #smallpreview:hover{
-      background-size: 105% 105%;
+      background-size: 105%;
     }
   
     #grid-item{
