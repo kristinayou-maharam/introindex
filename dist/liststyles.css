@@ -135,7 +135,7 @@
       background-size: 105%;
     }
   
-    #grid-item{
+    .grid-item{
       display: inline-block;
       margin-right: 2vw;
       margin-left: 2vw;
@@ -199,4 +199,10 @@
 
     #productlink:hover > a span {
       transform: translateX(50%);
+
+    }
+
+    #newtoold.is-active p,
+    #oldtonew.is-active p {
+        color: red;
     }
