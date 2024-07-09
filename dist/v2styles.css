@@ -42,7 +42,7 @@ html {
   #container-inner {
     background: rgb(153, 153, 153);
     height: 100vh;
-    width: 160vw;
+    width: 180vw;
     display: flex;
     flex-wrap: nowrap;
     max-width: unset !important;
@@ -64,51 +64,58 @@ html {
   }
 
 
+  .one{
+    background-image: url(./img/Maharam_Bertjan_0467.jpg);
+    background-position: center;
+    background-size: 100vw;
+  }
 
-.one{
+.two{
     background-image: url(./img/MHRM_JacobHashimoto_Product_01.jpg);
     background-position: center;
     background-size: 100vw;
   }
+
+ 
   
-.two{
+.three{
     background-image: url(./img/isa_IMG_0031_1.jpg);
     background-position: center;
     background-size: 100vw;
   }
   
-.three{
+.four{
     background-image: url(./img/factor_0027.jpg);
     background-position: center;
     background-size: 100vw;
   }
   
-.four{
+.five{
     background-image: url(./img/passage.jpg);
     background-position: center;
     background-size: 100vw;
   }
   
-.five{
+.six{
     background-image: url(./img/cumulus-hive.jpg);
     background-position: center;
     background-size: 100vw;
   }
   
-.six{
+.seven{
     background-image: url(./img/canopy.jpg);
     background-position: center;
     background-size: 100vw;
   }
   
-.seven{
+.eight{
     background-image: url(./img/twist.jpg);
     background-position: center;
     background-size: 100vw;
     
   }
 
-.eight{
+.nine{
   background-image: url(./img/PSmith_PaisleyBrocade.jpg);
   background-position: center;
   background-size: 100vw;
@@ -118,9 +125,6 @@ html {
     background-color: black;
   }
 
-  #seemore :hover{
-color: red !important;
-  }
 
   .links{
     display: none;
@@ -137,15 +141,20 @@ color: red !important;
 
   h3:hover {
     color: red;
+    transition: 0.5s;
   }
 
   h4{
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
     font-family: "maharam";
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 16px;
+  }
+
+  #hoverlink:hover{
+    color: red;
   }
 
   a{
@@ -192,5 +201,15 @@ color: red !important;
 
   #home :hover{
     color: red;
+  }
+
+  h4 #hoverlink span{
+    display: inline-block;
+    transform: translateX(20%);
+    transition: 0.5s;
+  }
+
+h4:hover >  #hoverlink span{
+    transform: translateX(50%);
   }
 

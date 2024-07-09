@@ -27,6 +27,8 @@ var expandButtonFive = document.getElementById("expandfive");
 var expandButtonSix = document.getElementById("expandsix"); 
 var expandButtonSeven = document.getElementById("expandseven"); 
 var expandButtonEight = document.getElementById("expandeight"); 
+var expandButtonNine = document.getElementById("expandnin"); 
+
 
 var oneLinks = document.getElementById("onelinks");
 var twoLinks = document.getElementById("twolinks");
@@ -36,6 +38,8 @@ var fiveLinks = document.getElementById("fivelinks");
 var sixLinks = document.getElementById("sixlinks");
 var sevenLinks = document.getElementById("sevenlinks");
 var eightLinks = document.getElementById("eightlinks");
+var nineLinks = document.getElementById("ninelinks");
+
 
 var expandOne = document.getElementById("expandone");
 var expandTwo = document.getElementById("expandtwo");
@@ -45,6 +49,7 @@ var expandFive = document.getElementById("expandfive");
 var expandSix = document.getElementById("expandsix");
 var expandSeven = document.getElementById("expandseven");
 var expandEight = document.getElementById("expandeight");
+var expandNine = document.getElementById("expandnine");
 
 
 expandButtonOne.addEventListener("click", function () {
@@ -340,6 +345,46 @@ expandButtonEight.addEventListener("click", function () {
     
 
           gsap.set(containerInner, { width: expanded ? "1058vw" : "100vw" });
+        ScrollTrigger.refresh();
+        // st.scroll(st.start + (st.end - st.start) * progress);
+        st.update();
+        st.getTween().progress(1); // eliminate the scrub animation
+        gsap.to(window, {
+          scrollTo: {
+            y: st.start + (st.end - st.start) * (expanded ? 1/4 : progress)
+            // Set the scroll to 0.5 of the ScrollTrigger instance's total scroll
+            // This is 1 divided by the index of the target, in this case
+            // the target is the third element so it's index is 2
+            // So is 1/2 = 0.5
+          },
+          ease: "sine.inOut"
+        });
+      }
+    }
+  );
+});
+
+expandButtonNine.addEventListener("click", function () {
+  gsap.fromTo(
+    ".nine",
+    {
+      minWidth: !expanded ? "20vw" : "100vw"
+    },
+    {
+      minWidth: !expanded ? "100vw" : "20vw",
+      duration: 0.5,
+      ease: "sine.inOut",
+      onComplete: () => {
+        expanded = !expanded;
+        let st = tween.scrollTrigger,
+          change = window.innerWidth * (expanded ? 0.25 : -0.25),
+          movement = containerInner.offsetWidth - window.innerWidth,
+          progress = (st.progress * 1) / ((movement + change) / movement);
+          nineLinks.style.display = !expanded ? "none" : "block";
+          expandN.style.marginTop = !expanded ? "87vh" : "76vh";
+    
+
+          gsap.set(containerInner, { width: expanded ? "1190vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
