@@ -27,7 +27,7 @@ var expandButtonFive = document.getElementById("expandfive");
 var expandButtonSix = document.getElementById("expandsix"); 
 var expandButtonSeven = document.getElementById("expandseven"); 
 var expandButtonEight = document.getElementById("expandeight"); 
-var expandButtonNine = document.getElementById("expandnin"); 
+var expandButtonNine = document.getElementById("expandnine"); 
 
 
 var oneLinks = document.getElementById("onelinks");
@@ -265,14 +265,14 @@ expandButtonSix.addEventListener("click", function () {
           sixLinks.style.display = !expanded ? "none" : "block";
           expandSix.style.marginTop = !expanded ? "87vh" : "80vh";
 
-          gsap.set(containerInner, { width: expanded ? "785vw" : "100vw" });
+          gsap.set(containerInner, { width: expanded ? "1150vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
         st.getTween().progress(1); // eliminate the scrub animation
         gsap.to(window, {
           scrollTo: {
-            y: st.start + (st.end - st.start) * (expanded ? 1/4 : progress)
+            y: st.start + (st.end - st.start) * (expanded ? 1/5 : progress)
             // Set the scroll to 0.5 of the ScrollTrigger instance's total scroll
             // This is 1 divided by the index of the target, in this case
             // the target is the third element so it's index is 2
@@ -304,14 +304,14 @@ expandButtonSeven.addEventListener("click", function () {
           sevenLinks.style.display = !expanded ? "none" : "block";
           expandSeven.style.marginTop = !expanded ? "87vh" : "76vh";
 
-          gsap.set(containerInner, { width: expanded ? "920vw" : "100vw" });
+          gsap.set(containerInner, { width: expanded ? "1895vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
         st.getTween().progress(1); // eliminate the scrub animation
         gsap.to(window, {
           scrollTo: {
-            y: st.start + (st.end - st.start) * (expanded ? 1/4 : progress)
+            y: st.start + (st.end - st.start) * (expanded ? 1/6 : progress)
             // Set the scroll to 0.5 of the ScrollTrigger instance's total scroll
             // This is 1 divided by the index of the target, in this case
             // the target is the third element so it's index is 2
@@ -344,14 +344,14 @@ expandButtonEight.addEventListener("click", function () {
           expandEight.style.marginTop = !expanded ? "87vh" : "76vh";
     
 
-          gsap.set(containerInner, { width: expanded ? "1058vw" : "100vw" });
+          gsap.set(containerInner, { width: expanded ? "2940vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
         st.getTween().progress(1); // eliminate the scrub animation
         gsap.to(window, {
           scrollTo: {
-            y: st.start + (st.end - st.start) * (expanded ? 1/4 : progress)
+            y: st.start + (st.end - st.start) * (expanded ? 1/7 : progress)
             // Set the scroll to 0.5 of the ScrollTrigger instance's total scroll
             // This is 1 divided by the index of the target, in this case
             // the target is the third element so it's index is 2
@@ -363,6 +363,8 @@ expandButtonEight.addEventListener("click", function () {
     }
   );
 });
+
+
 
 expandButtonNine.addEventListener("click", function () {
   gsap.fromTo(
@@ -381,17 +383,17 @@ expandButtonNine.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           nineLinks.style.display = !expanded ? "none" : "block";
-          expandN.style.marginTop = !expanded ? "87vh" : "76vh";
+          expandNine.style.marginTop = !expanded ? "87vh" : "76vh";
     
 
-          gsap.set(containerInner, { width: expanded ? "1190vw" : "100vw" });
+          gsap.set(containerInner, { width: expanded ? "4320vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
         st.getTween().progress(1); // eliminate the scrub animation
         gsap.to(window, {
           scrollTo: {
-            y: st.start + (st.end - st.start) * (expanded ? 1/4 : progress)
+            y: st.start + (st.end - st.start) * (expanded ? 1/8 : progress)
             // Set the scroll to 0.5 of the ScrollTrigger instance's total scroll
             // This is 1 divided by the index of the target, in this case
             // the target is the third element so it's index is 2
@@ -399,6 +401,7 @@ expandButtonNine.addEventListener("click", function () {
           },
           ease: "sine.inOut"
         });
+        st.update();
       }
     }
   );

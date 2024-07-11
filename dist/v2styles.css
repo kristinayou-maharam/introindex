@@ -67,13 +67,15 @@ html {
   .one{
     background-image: url(./img/Maharam_Bertjan_0467.jpg);
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
 .two{
     background-image: url(./img/MHRM_JacobHashimoto_Product_01.jpg);
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
  
@@ -81,44 +83,51 @@ html {
 .three{
     background-image: url(./img/isa_IMG_0031_1.jpg);
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
 .four{
     background-image: url(./img/factor_0027.jpg);
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
 .five{
     background-image: url(./img/passage.jpg);
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
 .six{
     background-image: url(./img/cumulus-hive.jpg);
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
 .seven{
     background-image: url(./img/canopy.jpg);
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
 .eight{
     background-image: url(./img/twist.jpg);
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
     
   }
 
 .nine{
   background-image: url(./img/PSmith_PaisleyBrocade.jpg);
   background-position: center;
-  background-size: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
   .more{
