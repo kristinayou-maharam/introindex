@@ -344,7 +344,7 @@ expandButtonEight.addEventListener("click", function () {
           expandEight.style.marginTop = !expanded ? "87vh" : "76vh";
     
 
-          gsap.set(containerInner, { width: expanded ? "2940vw" : "100vw" });
+          gsap.set(containerInner, { width: expanded ? "3780vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
@@ -386,7 +386,7 @@ expandButtonNine.addEventListener("click", function () {
           expandNine.style.marginTop = !expanded ? "87vh" : "76vh";
     
 
-          gsap.set(containerInner, { width: expanded ? "4320vw" : "100vw" });
+          gsap.set(containerInner, { width: expanded ? "5420vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
         st.update();
