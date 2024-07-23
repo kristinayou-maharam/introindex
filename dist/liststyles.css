@@ -209,3 +209,23 @@
     #oldtonew.is-active p {
         color: red;
     }
+
+    #grid-icon{
+      height: 20px;
+       fill: rgb(255, 0, 0);
+       transition: 0.5s all;
+     }
+   
+
+   
+     #scroll-icon{
+       height: 16px;
+       margin-left: 30px;
+       fill: rgb(0, 0, 0);
+       transition: 0.5s all;
+     }
+   
+     #scroll-icon:hover{
+       fill: red;
+       scale: 1.1;
+     }
