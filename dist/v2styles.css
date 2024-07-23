@@ -1,279 +1,224 @@
 @font-face {
-  font-family: "maharam";
-  src: url("./fonts/MaharamNeue-Regular.otf");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "maharam-italic";
-  src: url("./fonts/MaharamNeue-Italic.otf");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "maharam-medium";
-  src: url("./fonts/MaharamNeue-Medium.otf");
-  font-weight: medium;
-}
-
-@font-face {
-  font-family: "maharam-medium-italic";
-  src: url("./fonts/MaharamNeue-MediumItalic.otf");
-  font-weight: medium;
-}
+    font-family: "maharam";
+    src: url("./fonts/MaharamNeue-Regular.otf");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "maharam-italic";
+    src: url("./fonts/MaharamNeue-Italic.otf");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "maharam-medium";
+    src: url("./fonts/MaharamNeue-Medium.otf");
+    font-weight: medium;
+  }
+  
+  @font-face {
+    font-family: "maharam-medium-italic";
+    src: url("./fonts/MaharamNeue-MediumItalic.otf");
+    font-weight: medium;
+  }
 
 html {
-  overflow-y: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  -webkit-overflow-scrolling: touch;
-}
-body {
-  overflow-y: visible;
-  position: relative;
-  height: unset;
-}
-html,
-body {
-  overflow-x: hidden;
-  margin: 0;
-}
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+  }
+  body {
+    overflow-y: visible;
+    position: relative;
+    height: unset;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  #container-inner {
+    background: rgb(153, 153, 153);
+    height: 100vh;
+    width: 180vw;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: unset !important;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: none;
+  }
+  section {
+    min-width: 20vw;
+    display: flex;
+    justify-content: left;
 
-#container-inner {
-  background: rgb(153, 153, 153);
-  height: 100vh;
-  width: 180vw;
-  display: flex;
-  flex-wrap: nowrap;
-  max-width: unset !important;
-  -ms-scroll-chaining: none;
-  overscroll-behavior: none;
-}
-section {
-  min-width: 20vw;
-  display: flex;
-  justify-content: left;
-
-}
-.expand {
-  cursor: pointer;
-  color: white;
-  margin-left: 3vw;
-  /* position: absolute; */
-  margin-top: 87vh;
-}
+  }
+  .expand {
+    cursor: pointer;
+    color: white;
+    margin-left: 3vw;
+    /* position: absolute; */
+    margin-top: 87vh;
+  }
 
 
-.one{
-  background-image: url(./img/Maharam_Bertjan_0467.jpg);
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .one{
+    background-image: url(./img/Maharam_Bertjan_0467.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 .two{
-  background-image: url(./img/jacob_hashimoto_002.jpg);
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+    background-image: url(./img/MHRM_JacobHashimoto_Product_01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-
-
-.three{
-  background-image: url(./img/isa_IMG_0031_1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.four{
-  background-image: url(./img/freya_001.jpg);
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.five{
-  background-image: url(./img/PSmith_Ballon.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.six{
-  background-image: url(./img/cumulus-hive.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.seven{
-  background-image: url(./img/canopy.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.eight{
-  background-image: url(./img/twist.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+ 
   
-}
+.three{
+    background-image: url(./img/isa_IMG_0031_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+.four{
+    background-image: url(./img/factor_0027.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+.five{
+    background-image: url(./img/passage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+.six{
+    background-image: url(./img/cumulus-hive.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+.seven{
+    background-image: url(./img/canopy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+.eight{
+    background-image: url(./img/twist.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
 
 .nine{
-background-image: url(./img/PSmith_PaisleyBrocade.jpg);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+  background-image: url(./img/PSmith_PaisleyBrocade.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.more{
-  background-color: black;
-}
+  .more{
+    background-color: black;
+  }
 
 
-.links{
-  display: none;
-}
+  .links{
+    display: none;
+  }
 
 
-h3 {
-  font-size: 24px;
-  color: #ffffff;
-  font-family: "maharam";
-  font-weight: normal;
-  line-height: 1.2;
-}
+  h3 {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "maharam";
+    font-weight: normal;
+    line-height: 1.2;
+  }
 
-h3:hover {
-  color: red !important;
-  transition: 0.5s;
-}
+  h3:hover {
+    color: red;
+    transition: 0.5s;
+  }
 
-h4{
-  font-size: 16px;
-  color: #ffffff;
-  font-family: "maharam";
-  font-weight: normal;
-  margin-top: 0px;
-  margin-bottom: 16px;
-}
+  h4{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "maharam";
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
 
-.type{
-  font-size: 14px;
-  color: #ffffff;
-  font-family: "maharam";
-  font-weight: normal;
-  margin-top: -35px;
-  margin-bottom: 0px;
-  display: none;
-}
+  #hoverlink:hover{
+    color: red;
+  }
 
-#month{
-  margin-top: 15px;
-}
+  a{
+    color: white;
+    text-decoration: none;
+  }
 
+  #topnav{
+    display: block;
+    position: fixed;
+  z-index: 10;
+  }
 
+  #logolockup{
+    display: inline-block;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    position: fixed;
+  }
 
-#hoverlink:hover{
-  color: red;
-}
+  #logo{
+    width: 125px;
+  }
 
-a{
-  color: white;
-  text-decoration: none;
-}
-
-#topnav{
-  display: block;
-  position: fixed;
-z-index: 10;
-}
-
-#logolockup{
-  display: inline-block;
-  margin-left: 3vw;
-  margin-top: 5vh;
-  position: fixed;
-}
-
-#logo{
-  width: 125px;
-}
-
-#rightnav{
-width: 25vw;
-display: flex;
- position: fixed;
- justify-content: right;
- top: 5vh;
- right: 50px;
- z-index: 10;
-}
-
-#grid-icon{
-  height: 20px;
-   fill: rgb(0, 0, 0);
-   transition: 0.5s all;
-   display: block;
-
- }
-
- #grid-icon:hover{
-  fill: rgb(255, 0, 0);
-  scale: 1.1;
-}
-
-
- #scroll-icon{
-  height: 16px;
-  margin-left: 30px;
-  fill: rgb(255, 0, 0);
-  transition: 0.5s all;
-  display: block;
-
-
-}
-
-#collapse-icon{
-  height: 18px;
-  margin-left: 30px;
-  fill: rgb(255, 0, 0);
-  stroke: rgb(0, 0, 0);
-  stroke-width: 100px;
-  transition: 0.5s all;
-  display: none;
-}
-
-#collapse-icon:hover{
-  scale: 1.2;
-  transition: 0.5s all;
-  stroke: rgb(255, 0, 0);
-}
-
+  #rightnav{
+    width: 25vw;
+    display: flex;
+    position: fixed;
+    justify-content: right;
+    vertical-align: top;
+    top: 5vh;
+    right: 50px;
+    color: white;
+  }
 
 
 #index{
-  margin-left: 40px;
-}
+    margin-left: 40px;
+  }
 
-#index :hover{
-  color: red;
-}
+  #index :hover{
+    color: red;
+  }
 
-#home :hover{
-  color: red;
-}
+  #home :hover{
+    color: red;
+  }
 
-h4 #hoverlink span{
-  display: inline-block;
-  transform: translateX(20%);
-  transition: 0.5s;
-}
+  h4 #hoverlink span{
+    display: inline-block;
+    transform: translateX(20%);
+    transition: 0.5s;
+  }
 
 h4:hover >  #hoverlink span{
-  transform: translateX(50%);
-}
+    transform: translateX(50%);
+  }
+
