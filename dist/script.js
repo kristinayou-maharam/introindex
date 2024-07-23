@@ -88,7 +88,7 @@ expandButtonOne.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
         oneType.style.display = !expanded ? "none" : "block";
-        expandOne.style.marginTop = !expanded ? "87vh" : "80vh";
+        expandOne.style.marginTop = !expanded ? "87vh" : "84vh";
         gsap.set(containerInner, { width: expanded ? "100vw" : "100vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
@@ -154,7 +154,7 @@ expandButtonTwo.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
           twoType.style.display = !expanded ? "none" : "block";
-          expandTwo.style.marginTop = !expanded ? "87vh" : "80vh";
+          expandTwo.style.marginTop = !expanded ? "87vh" : "84vh";
           gsap.set(containerInner, { width: expanded ? "120vw" : "120vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
@@ -196,7 +196,7 @@ expandButtonThree.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
           threeType.style.display = !expanded ? "none" : "block";
-          expandThree.style.marginTop = !expanded ? "87vh" : "80vh";
+          expandThree.style.marginTop = !expanded ? "87vh" : "84vh";
 
           gsap.set(containerInner, { width: expanded ? "180vw" : "100vw" });
         ScrollTrigger.refresh();
@@ -239,7 +239,7 @@ expandButtonFour.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
           fourType.style.display = !expanded ? "none" : "block";
-          expandFour.style.marginTop = !expanded ? "87vh" : "80vh";
+          expandFour.style.marginTop = !expanded ? "87vh" : "84vh";
 
           gsap.set(containerInner, { width: expanded ? "340vw" : "100vw" });
         ScrollTrigger.refresh();
@@ -282,7 +282,7 @@ expandButtonFive.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
           fiveType.style.display = !expanded ? "none" : "block";
-          expandFive.style.marginTop = !expanded ? "87vh" : "80vh";
+          expandFive.style.marginTop = !expanded ? "87vh" : "84vh";
 
           gsap.set(containerInner, { width: expanded ? "650vw" : "100vw" });
         ScrollTrigger.refresh();
@@ -325,7 +325,7 @@ expandButtonSix.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
           sixType.style.display = !expanded ? "none" : "block";
-          expandSix.style.marginTop = !expanded ? "87vh" : "80vh";
+          expandSix.style.marginTop = !expanded ? "87vh" : "84vh";
 
           gsap.set(containerInner, { width: expanded ? "1150vw" : "100vw" });
         ScrollTrigger.refresh();
@@ -368,7 +368,7 @@ expandButtonSeven.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
           sevenType.style.display = !expanded ? "none" : "block";
-          expandSeven.style.marginTop = !expanded ? "87vh" : "76vh";
+          expandSeven.style.marginTop = !expanded ? "87vh" : "80vh";
 
           gsap.set(containerInner, { width: expanded ? "1895vw" : "100vw" });
         ScrollTrigger.refresh();
@@ -411,7 +411,7 @@ expandButtonEight.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
           eightType.style.display = !expanded ? "none" : "block";
-          expandEight.style.marginTop = !expanded ? "87vh" : "76vh";
+          expandEight.style.marginTop = !expanded ? "87vh" : "80vh";
     
 
           gsap.set(containerInner, { width: expanded ? "3780vw" : "100vw" });
