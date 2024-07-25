@@ -84,6 +84,7 @@
       margin-top: 15px;
       width: 50%;
       display: inline-block;
+      margin-right: 0;
     }
 
     h4{
@@ -113,14 +114,19 @@
     }
   
     #rightnav{
-      width: 25vw;
       display: flex;
      position: fixed;
      justify-content: right;
      top: 5vh;
      right: 50px;
      z-index: 10;
+     padding: 10px;
+      border-radius: 20px;
+      border: rgb(0, 0, 0) 0.5px solid;
+      background-color: rgb(255, 255, 255, 0.3);
     }
+
+ 
   
     #home{
       display: inline;
@@ -128,17 +134,23 @@
   
     #index{
       display: inline;
-      margin-left: 40px;
+      margin-left: 25px;
+      vertical-align: bottom;
+    }
+
+    #scroll{
+      margin-left: 20px;
+      vertical-align: bottom;
     }
   
     #smallpreview{
       width: 25vw;
-      transform: .2s;
-      transition: all 0.8s;
+      transform: .2s; 
       height: 35vh;
       background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
+      transition: 0.5s;
   
     }
   
@@ -151,17 +163,16 @@
       margin-right: 2vw;
       margin-left: 2vw;
       margin-bottom: 30px;
-      transition: 1s;
+      /* transition: 1s; */
 
     }
   
     #grid{
       position: relative;
       margin-top: 24vh;
-      margin-left: 5vw;
-      margin-right: 5vw;
       display: block;
-      transition: 1s;
+      margin-left: 5.5vw;
+      /* transition: 1s; */
     }
   
     #row{
@@ -172,6 +183,8 @@
       line-height: 0.8;
       float: right;
       margin-right: 1vw;
+      width: 40%;
+      text-align: right;
     }
 
     #sort{
@@ -224,18 +237,20 @@
     }
 
     #grid-icon{
-      height: 20px;
+      height: 17px;
        fill: rgb(255, 0, 0);
        transition: 0.5s all;
+   
      }
    
 
    
      #scroll-icon{
-       height: 16px;
-       margin-left: 30px;
-       fill: rgb(0, 0, 0);
-       transition: 0.5s all;
+      height: 12px;
+      margin-left: 10px;
+      fill: rgb(0, 0, 0);
+      transition: 0.5s all;
+      margin-right: 20px;
      }
    
      #scroll-icon:hover{

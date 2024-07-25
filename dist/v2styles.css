@@ -102,22 +102,22 @@ section {
 }
 
 .six{
-  background-image: url(./img/cumulus-hive.jpg);
-  background-position: center;
+  background-image: url(./img/clove-2.jpg);
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .seven{
-  background-image: url(./img/canopy.jpg);
-  background-position: center;
+  background-image: url(./img/prism.jpg);
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .eight{
-  background-image: url(./img/twist.jpg);
-  background-position: center;
+  background-image: url(./img/Maharam_Bertjan_0828.jpg);
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -205,21 +205,24 @@ z-index: 10;
 }
 
 #rightnav{
-width: 25vw;
+/* width: 25vw; */
 display: flex;
  position: fixed;
  justify-content: right;
  top: 5vh;
  right: 50px;
  z-index: 10;
+background-color: rgb(255,255,255,0.3);
+padding: 10px;
+border-radius: 20px;
+border: white 0.5px solid;
 }
 
 #grid-icon{
-  height: 20px;
+  height: 17px;
    fill: rgb(255, 255, 255);
    transition: 0.5s all;
    display: block;
-
  }
 
  #grid-icon:hover{
@@ -229,21 +232,21 @@ display: flex;
 
 
  #scroll-icon{
-  height: 16px;
-  margin-left: 30px;
+  height: 12px;
+  margin-left: 10px;
   fill: rgb(255, 0, 0);
   transition: 0.5s all;
-  display: block;
-
+  margin-right: 20px;
 
 }
 
 #collapse-icon{
-  height: 18px;
-  margin-left: 30px;
+  height: 12px;
+  margin-left: -25px;
+  margin-right: 10px;
   fill: rgb(255, 0, 0);
-  stroke: rgb(0, 0, 0);
-  stroke-width: 100px;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 150px;
   transition: 0.5s all;
   display: none;
 }
@@ -257,11 +260,17 @@ display: flex;
 
 
 #index{
-  margin-left: 40px;
+  margin-left: 25px;
+  vertical-align: bottom;
 }
 
 #index :hover{
   color: red;
+}
+
+#scroll{
+  margin-left: 20px;
+  vertical-align: bottom;
 }
 
 #home :hover{
