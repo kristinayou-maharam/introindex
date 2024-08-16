@@ -49,6 +49,12 @@ body {
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
 }
+
+#container-outer{
+  overflow: hidden;
+  display: block;
+  width: 100vw;
+}
 section {
   min-width: 20vw;
   display: flex;
@@ -60,7 +66,8 @@ section {
   color: white;
   margin-left: 3vw;
   /* position: absolute; */
-  margin-top: 87vh;
+  margin-top: 84vh;
+  vertical-align: top;
 }
 
 
@@ -242,7 +249,7 @@ border: white 0.5px solid;
 
 #collapse-icon{
   height: 12px;
-  margin-left: -25px;
+  margin-left: -28px;
   margin-right: 10px;
   fill: rgb(255, 0, 0);
   stroke: rgb(255, 255, 255);
@@ -286,3 +293,93 @@ h4 #hoverlink span{
 h4:hover >  #hoverlink span{
   transform: translateX(50%);
 }
+
+#mobile-container{
+  display: none;
+}
+
+@media only screen and (max-width: 1070px) {
+
+#mobile-container{
+  display: block;
+}
+
+ #container-outer{
+  display: none;
+ }
+
+ h3{
+  margin-top: 0;
+  padding-left: 3vw;
+  padding-top: 16%;
+ }
+
+ .mobile-section{
+  height: 25vh;
+  width: 100vw;
+  margin-top: 0;
+ }
+
+ #mobile-one{
+  background-image: url(./img/Maharam_Bertjan_0467.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+  #mobile-two{
+    background-image: url(./img/jacob_hashimoto_002.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #mobile-three{
+    background-image: url(./img/isa_IMG_0031_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #mobile-four{
+    background-image: url(./img/freya_001.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #mobile-five{
+    background-image: url(./img/PSmith_Ballon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #mobile-six{
+    background-image: url(./img/clove-2.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #mobile-seven{
+    background-image: url(./img/prism.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #mobile-eight{
+    background-image: url(./img/Maharam_Bertjan_0828.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #mobile-nine{
+    background-image: url(./img/PSmith_PaisleyBrocade.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ }

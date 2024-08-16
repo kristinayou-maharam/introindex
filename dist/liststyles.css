@@ -257,3 +257,33 @@
        fill: red;
        scale: 1.1;
      }
+
+     @media only screen and (max-width: 1070px) {
+      #productlink{
+        display: block;
+        text-align: left;
+        width: 97% !important;
+        margin-left: 5vw !important;
+      }
+
+      h3{
+        display: block;
+        width: 70%;
+      }
+
+      #sort{
+        margin-right: 3vw !important;
+      }
+
+      #oldtonew{
+        right: 7vw !important;
+      }
+
+      #newtoold{
+        right: 10vw !important;
+      }
+
+      #smallpreview{
+        width: 40vw;
+      }
+     }
