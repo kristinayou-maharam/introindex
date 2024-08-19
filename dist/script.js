@@ -457,7 +457,7 @@ expandButtonNine.addEventListener("click", function () {
         scroll.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
           nineType.style.display = !expanded ? "none" : "block";
-          expandNine.style.marginTop = !expanded ? "84vh" : "78vh";
+          expandNine.style.marginTop = !expanded ? "80vh" : "78vh";
           gsap.set(containerInner, { width: expanded ? "280vw" : "180vw" });
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
