@@ -51,8 +51,21 @@
 <!-- partial:index.partial.html -->
  <div id="mobile-container">
   <div id="hamburger-menu">
-    <img id="hamburger" src="img/hamburger.svg">
+    <img id="hamburger" onclick="openMenu()" src="img/hamburger.svg">
   </div>
+
+  <div id="mobile-menu">
+    <div id="logolockup">
+      <a target="_blank" href="http://www.maharam.com"><img id="logo" src="img/smalluselogo-white.svg"></a>
+      </div>
+    <img src="img/exit.svg" id="exit">
+    <div id="menubuttons">
+    <ul>Scroll View ⏺</ul>
+    <a target="_blank" href="./listview.html"><ul>Grid View</ul></a>
+    <a target="_blank" href="http://www.maharam.com"><ul>Maharam Home</ul></a>
+    </div>
+  </div>
+
   <a id="hoverlink" target="_blank" rel="noopener noreferrer" href="https://introductions.maharam.com/june_2024"><div id="mobile-one" class="mobile-section">
     <h5 id="mobiletype">Introduction</h5>
     <h3>June 2024</h3>
@@ -209,6 +222,30 @@
     </section>
   </div>
 </div>
+
+<script>
+var menu = document.getElementById("hamburger");
+var exitMenu = document.getElementById("exit");
+var mobileMenu = document.getElementById("mobile-menu");
+
+menu.addEventListener("click", function() {
+  if (mobileMenu.style.display === "none") {
+    mobileMenu.style.display = "block";
+  } else {
+    mobileMenu.style.display = "none";
+  }
+});
+
+exitMenu.addEventListener("click", function() {
+  if (mobileMenu.style.display === "block") {
+    mobileMenu.style.display = "none";
+  } else {
+    mobileMenu.style.display = "block";
+  }
+});
+
+
+</script>
 
 
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
