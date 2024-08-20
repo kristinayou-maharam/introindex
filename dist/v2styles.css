@@ -387,7 +387,7 @@ h4:hover >  #hoverlink span{
   h3{
     padding-top: 0;
     font-size: 36px;
-    padding-left: 5vw;
+    padding-left: 8vw;
   }
 
   .mobile-section{
@@ -402,11 +402,11 @@ h4:hover >  #hoverlink span{
    }
 
    #mobiletype{
-    padding-top: 30%;
+    padding-top: 40%;
     padding-bottom: 0;
-    color: rgb(255,255,255,0.8);
+    color: rgb(255,255,255);
     font-family: "maharam";
-    padding-left: 5vw;
+    padding-left: 8vw;
     margin-bottom: 10px;
     margin-top: 0;
     font-size: 22px;
@@ -422,7 +422,7 @@ h4:hover >  #hoverlink span{
 
    #logo{
     width: 24vw;
-    margin-left: 36vw;
+    margin-left: 5vw;
     z-index: 500 !important;
    }
 
