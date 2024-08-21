@@ -81,10 +81,6 @@
       font-family: "maharam";
       font-weight: normal;
       line-height: 1.2;
-      margin-top: 15px;
-      width: 50%;
-      display: inline-block;
-      margin-right: 0;
     }
 
     h4{
@@ -94,14 +90,6 @@
       font-weight: normal;
       margin-top: 0px;
       margin-bottom: 16px;
-    }
-
-    h5{
-      font-size: 12px;
-      color: #535353;
-      font-family: "maharam";
-      font-weight: normal;
-      margin-bottom: 0;
     }
   
     a{
@@ -114,19 +102,14 @@
     }
   
     #rightnav{
+      width: 25vw;
       display: flex;
      position: fixed;
      justify-content: right;
      top: 5vh;
      right: 50px;
      z-index: 10;
-     padding: 10px;
-      border-radius: 20px;
-      border: rgb(0, 0, 0) 0.5px solid;
-      background-color: rgb(255, 255, 255, 0.3);
     }
-
- 
   
     #home{
       display: inline;
@@ -134,23 +117,17 @@
   
     #index{
       display: inline;
-      margin-left: 25px;
-      vertical-align: bottom;
-    }
-
-    #scroll{
-      margin-left: 20px;
-      vertical-align: bottom;
+      margin-left: 40px;
     }
   
     #smallpreview{
       width: 25vw;
-      transform: .2s; 
+      transform: .2s;
+      transition: all 0.8s;
       height: 35vh;
       background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
-      transition: 0.5s;
   
     }
   
@@ -163,16 +140,17 @@
       margin-right: 2vw;
       margin-left: 2vw;
       margin-bottom: 30px;
-      /* transition: 1s; */
+      transition: 1s;
 
     }
   
     #grid{
       position: relative;
       margin-top: 24vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
       display: block;
-      margin-left: 5.5vw;
-      /* transition: 1s; */
+      transition: 1s;
     }
   
     #row{
@@ -181,10 +159,6 @@
   
     #productlink{
       line-height: 0.8;
-      float: right;
-      margin-right: 1vw;
-      width: 40%;
-      text-align: right;
     }
 
     #sort{
@@ -235,55 +209,3 @@
     #oldtonew.is-active p {
         color: red;
     }
-
-    #grid-icon{
-      height: 17px;
-       fill: rgb(255, 0, 0);
-       transition: 0.5s all;
-   
-     }
-   
-
-   
-     #scroll-icon{
-      height: 12px;
-      margin-left: 10px;
-      fill: rgb(0, 0, 0);
-      transition: 0.5s all;
-      margin-right: 20px;
-     }
-   
-     #scroll-icon:hover{
-       fill: red;
-       scale: 1.1;
-     }
-
-     @media only screen and (max-width: 1070px) {
-      #productlink{
-        display: block;
-        text-align: left;
-        width: 97% !important;
-        margin-left: 5vw !important;
-      }
-
-      h3{
-        display: block;
-        width: 70%;
-      }
-
-      #sort{
-        margin-right: 3vw !important;
-      }
-
-      #oldtonew{
-        right: 7vw !important;
-      }
-
-      #newtoold{
-        right: 10vw !important;
-      }
-
-      #smallpreview{
-        width: 40vw;
-      }
-     }
