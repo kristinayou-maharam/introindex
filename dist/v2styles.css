@@ -73,13 +73,20 @@ section {
 
 
 .one{
+  background-image: url(./img/IMG_0004.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.two{
   background-image: url(./img/Maharam_Bertjan_0467.jpg);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.two{
+.three{
   background-image: url(./img/jacob_hashimoto_002.jpg);
   background-position: left;
   background-size: cover;
@@ -88,54 +95,47 @@ section {
 
 
 
-.three{
+.four{
   background-image: url(./img/isa_IMG_0031_1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.four{
+.five{
   background-image: url(./img/freya_001.jpg);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.five{
+.six{
   background-image: url(./img/PSmith_Ballon.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.six{
+.seven{
   background-image: url(./img/clove-2.jpg);
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.seven{
+.eight{
   background-image: url(./img/prism.jpg);
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.eight{
+.nine{
   background-image: url(./img/Maharam_Bertjan_0828.jpg);
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   
-}
-
-.nine{
-background-image: url(./img/PSmith_PaisleyBrocade.jpg);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
 }
 
 .more{
@@ -321,67 +321,69 @@ h4:hover >  #hoverlink span{
  }
 
  #mobile-one{
+  background-image: url(./img/IMG_0004.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+ #mobile-two{
   background-image: url(./img/Maharam_Bertjan_0467.jpg);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
  }
 
-  #mobile-two{
+  #mobile-three{
     background-image: url(./img/jacob_hashimoto_002.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  #mobile-three{
+  #mobile-four{
     background-image: url(./img/isa_IMG_0031_1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  #mobile-four{
+  #mobile-five{
     background-image: url(./img/freya_001.jpg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  #mobile-five{
+  #mobile-six{
     background-image: url(./img/PSmith_Ballon.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  #mobile-six{
+  #mobile-seven{
     background-image: url(./img/clove-2.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  #mobile-seven{
+  #mobile-eight{
     background-image: url(./img/prism.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  #mobile-eight{
+  #mobile-nine{
     background-image: url(./img/Maharam_Bertjan_0828.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  #mobile-nine{
-    background-image: url(./img/PSmith_PaisleyBrocade.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+
  }
 
  @media only screen and (max-width: 1070px) {
