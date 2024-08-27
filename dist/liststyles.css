@@ -112,21 +112,59 @@
     a:hover{
       color: red;
     }
+
+    #switch{
+      position: fixed;
+      top: 36px;
+      right: 120px;
+      display: none;
+      transition: all 0.5s;
+      }
+
+    #switch h5{
+      color: red;
+    }
   
     #rightnav{
-      display: flex;
-     position: fixed;
-     justify-content: right;
-     top: 5vh;
-     right: 50px;
-     z-index: 10;
-     padding: 10px;
-      border-radius: 20px;
-      border: rgb(0, 0, 0) 0.5px solid;
-      background-color: rgb(255, 255, 255, 0.3);
+      width: 48px;
+        height: 25px;
+        background-color: #ddd;
+        border-radius: 25px;
+        position: fixed;
+        cursor: pointer;
+        right: 50px;
+        top: 50px;
+        z-index: 1000;
+      }
+    
+      .toggle-circle{
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        transition: right 0.3s ease;
+      }
+    
+      #rightnav:hover .toggle-circle {
+        right: 28px;
+        background-color: red;
+        transition: all 0.5s;
     }
+    
+    #rightnav:hover {
+      -webkit-box-shadow: -2px 8px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 8px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 8px 18px 0px rgba(0,0,0,0.75);
+    }
+    
+    #rightnav.active .toggle-circle {
+      right: 55px;
+    }    
 
- 
   
     #home{
       display: inline;

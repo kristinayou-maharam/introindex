@@ -211,18 +211,52 @@ z-index: 10;
 #logo{
   width: 125px;
 }
+
+#switch{
+position: absolute;
+top: 50px;
+right: 100px;
+}
+
 #rightnav{
-  display: flex;
-     position: fixed;
-     justify-content: right;
-     top: 5vh;
-     right: 50px;
-     z-index: 10;
-     padding: 10px;
-  background-color: rgb(255,255,255,0.3);
-  border-radius: 20px;
-  border: white 0.5px solid;
+  width: 48px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 25px;
+    position: fixed;
+    cursor: pointer;
+    right: 50px;
+    top: 50px;
+    z-index: 1000;
   }
+
+  .toggle-circle{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+  }
+
+  #rightnav:hover .toggle-circle {
+    left: 28px;
+    background-color: red;
+    transition: all 0.5s;
+}
+
+#rightnav:hover {
+  -webkit-box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+}
+
+#rightnav.active .toggle-circle {
+    left: 55px;
+}
   
   #grid-icon{
     height: 17px;
