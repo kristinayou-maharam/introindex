@@ -35,15 +35,18 @@
   #logolockup{
     display: inline-block;
     margin-left: 2.5vw;
-    margin-top: -24vh;
+    margin-top: 5vh;
     position: fixed;
   }
 
   #topnav{
     display: block;
     position: fixed;
-    margin-top: 5vh;
-    z-index: 10;
+    width: 100vw;
+    height: 10vh;
+    margin-top: -24vh;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
   }
   
   
@@ -123,6 +126,7 @@
 
     #switch h5{
       color: red;
+      font-size: 12px;
     }
   
     #rightnav{
@@ -156,9 +160,10 @@
     }
     
     #rightnav:hover {
-      -webkit-box-shadow: -2px 8px 18px 0px rgba(0,0,0,0.75);
+      /* -webkit-box-shadow: -2px 8px 18px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 8px 18px 0px rgba(0,0,0,0.75);
-    box-shadow: -2px 8px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 8px 18px 0px rgba(0,0,0,0.75); */
+    border: 0.5px solid red;
     }
     
     #rightnav.active .toggle-circle {
@@ -219,10 +224,10 @@
     }
   
     #productlink{
-      line-height: 0.8;
+      line-height: 1.4;
       margin-left: 0;
-      width: 40%;
-      margin-top: 0;
+      width: 48%;
+      margin-top: 0.8rem;
       text-align: left;
     }
 
@@ -262,7 +267,11 @@
       left: 7.5vw;
       font-family: 'maharam-medium';
     }
-s
+
+    #productlink a{
+      width: 100%;
+    }
+
     #productlink a span {
       display: inline-block;
       transform: translateX(20%);

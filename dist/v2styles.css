@@ -213,9 +213,18 @@ z-index: 10;
 }
 
 #switch{
-position: absolute;
-top: 50px;
-right: 100px;
+  position: fixed;
+  top: 36px;
+  right: 120px;
+  display: none;
+  transition: all 0.5s;
+  z-index: 1000;
+  }
+
+#switch h5{
+  color: red;
+  font-family: 'maharam';
+  font-size: 12px;
 }
 
 #rightnav{
@@ -249,46 +258,43 @@ right: 100px;
 }
 
 #rightnav:hover {
-  -webkit-box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+  /* -webkit-box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75); */
+border: 0.5px solid red;
 }
 
 #rightnav.active .toggle-circle {
     left: 55px;
 }
   
-  #grid-icon{
-    height: 17px;
-     fill: rgb(255, 255, 255);
-     transition: 0.5s all;
-     display: block;
-   }
-  
-   #grid-icon:hover{
-    fill: rgb(255, 0, 0);
-    scale: 1.1;
-  }
-  
-  
-   #scroll-icon{
-    height: 12px;
-    margin-left: 10px;
-    fill: rgb(255, 0, 0);
-    transition: 0.5s all;
-    margin-right: 20px;
-  
-  }
+
+#collapse{
+    width: 48px;
+      height: 25px;
+      background-color: #ddd;
+      border-radius: 25px;
+      position: fixed;
+      cursor: pointer;
+      right: 50px;
+      top: 50px;
+      z-index: 1000;
+      display: none;
+}
+
+#collapse:hover{
+  border: 0.5px solid red;
+}
   
   #collapse-icon{
     height: 12px;
-    margin-left: -28px;
+    margin-left: 18px;
+    margin-top: 6px;
     margin-right: 10px;
     fill: rgb(255, 0, 0);
     stroke: rgb(255, 255, 255);
-    stroke-width: 150px;
+    stroke-width: 120px;
     transition: 0.5s all;
-    display: none;
   }
   
   #collapse-icon:hover{

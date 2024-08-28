@@ -30,17 +30,6 @@ var expandButtonEight = document.getElementById("expandeight");
 var expandButtonNine = document.getElementById("expandnine"); 
 
 
-var oneType= document.getElementById("oneType");
-var twoType= document.getElementById("twoType");
-var threeType= document.getElementById("threeType");
-var fourType= document.getElementById("fourType");
-var fiveType= document.getElementById("fiveType");
-var sixType= document.getElementById("sixType");
-var sevenType= document.getElementById("sevenType");
-var eightType= document.getElementById("eightType");
-var nineType= document.getElementById("nineType");
-
-
 var oneLinks = document.getElementById("onelinks");
 var twoLinks = document.getElementById("twolinks");
 var threeLinks = document.getElementById("threelinks");
@@ -61,10 +50,8 @@ var expandSix = document.getElementById("expandsix");
 var expandSeven = document.getElementById("expandseven");
 var expandEight = document.getElementById("expandeight");
 var expandNine = document.getElementById("expandnine");
-
-var grid = document.getElementById("grid-icon");
-var scroll = document.getElementById("scroll-icon");
-var collapse = document.getElementById("collapse-icon");
+var toggle = document.getElementById("rightnav");
+var collapse = document.getElementById("collapse");
 
 
 expandButtonOne.addEventListener("click", function () {
@@ -84,10 +71,8 @@ expandButtonOne.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
         oneLinks.style.display = !expanded ? "none" : "block";
-        grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+        toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-        oneType.style.display = !expanded ? "none" : "block";
         expandOne.style.marginTop = !expanded ? "84vh" : "78vh";
         gsap.set(containerInner, { width: expanded ? "250vw" : "180vw" });
         ScrollTrigger.refresh();
@@ -122,8 +107,6 @@ collapse.addEventListener("click", function () {
       ease: "power1.inOut",
       onComplete: () => {
         expanded = !expanded;
-        grid.style.display = !expanded ? "none" : "block";
-        scroll.style.display = !expanded ? "none" : "block";
         collapse.style.display = !expanded ? "block" : "none";
         ScrollTrigger.refresh();
         // st.scroll(st.start + (st.end - st.start) * progress);
@@ -150,10 +133,8 @@ expandButtonTwo.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           twoLinks.style.display = !expanded ? "none" : "block";
-          grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+          toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-          twoType.style.display = !expanded ? "none" : "block";
           expandTwo.style.marginTop = !expanded ? "84vh" : "78vh";
           gsap.set(containerInner, { width: expanded ? "120vw" : "120vw" });
         ScrollTrigger.refresh();
@@ -192,10 +173,8 @@ expandButtonThree.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           threeLinks.style.display = !expanded ? "none" : "block";
-          grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+          toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-          threeType.style.display = !expanded ? "none" : "block";
           expandThree.style.marginTop = !expanded ? "84vh" : "78vh";
 
           gsap.set(containerInner, { width: expanded ? "250vw" : "180vw" });
@@ -235,10 +214,8 @@ expandButtonFour.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           fourLinks.style.display = !expanded ? "none" : "block";
-          grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+          toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-          fourType.style.display = !expanded ? "none" : "block";
           expandFour.style.marginTop = !expanded ? "84vh" : "78vh";
 
           gsap.set(containerInner, { width: expanded ? "250vw" : "180vw" });
@@ -278,10 +255,8 @@ expandButtonFive.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           fiveLinks.style.display = !expanded ? "none" : "block";
-          grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+          toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-          fiveType.style.display = !expanded ? "none" : "block";
           expandFive.style.marginTop = !expanded ? "84vh" : "78vh";
 
           gsap.set(containerInner, { width: expanded ? "250vw" : "180vw" });
@@ -321,10 +296,8 @@ expandButtonSix.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           sixLinks.style.display = !expanded ? "none" : "block";
-          grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+          toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-          sixType.style.display = !expanded ? "none" : "block";
           expandSix.style.marginTop = !expanded ? "84vh" : "78vh";
 
           gsap.set(containerInner, { width: expanded ? "250vw" : "180vw" });
@@ -364,10 +337,8 @@ expandButtonSeven.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           sevenLinks.style.display = !expanded ? "none" : "block";
-          grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+          toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-          sevenType.style.display = !expanded ? "none" : "block";
           expandSeven.style.marginTop = !expanded ? "84vh" : "78vh";
 
           gsap.set(containerInner, { width: expanded ? "250vw" : "180vw" });
@@ -407,10 +378,8 @@ expandButtonEight.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           eightLinks.style.display = !expanded ? "none" : "block";
-          grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+          toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-          eightType.style.display = !expanded ? "none" : "block";
           expandEight.style.marginTop = !expanded ? "84vh" : "78vh";
     
 
@@ -453,10 +422,8 @@ expandButtonNine.addEventListener("click", function () {
           movement = containerInner.offsetWidth - window.innerWidth,
           progress = (st.progress * 1) / ((movement + change) / movement);
           nineLinks.style.display = !expanded ? "none" : "block";
-          grid.style.display = !expanded ? "block" : "none";
-        scroll.style.display = !expanded ? "block" : "none";
+          toggle.style.display = !expanded ? "block" : "none";
         collapse.style.display = !expanded ? "none" : "block";
-          nineType.style.display = !expanded ? "none" : "block";
           expandNine.style.marginTop = !expanded ? "80vh" : "78vh";
           gsap.set(containerInner, { width: expanded ? "280vw" : "180vw" });
         ScrollTrigger.refresh();
