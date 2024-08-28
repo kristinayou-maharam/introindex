@@ -162,7 +162,7 @@ h3:hover {
 }
 
 h4{
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "maharam";
   font-weight: normal;
@@ -269,7 +269,7 @@ border: 0.5px solid red;
 }
   
 
-#collapse{
+.collapse{
     width: 48px;
       height: 25px;
       background-color: #ddd;
